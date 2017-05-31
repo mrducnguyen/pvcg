@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Angular QuickStart</title>
     <base href="/">
     <meta charset="UTF-8">
@@ -14,13 +15,16 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="systemjs.config.js"></script>
+    <script src="js/systemjs.config.js"></script>
     <script>
-      System.import('js/main.js').catch(function(err){ console.error(err); });
+        System.import('js/main.js').catch(function(err) {
+            console.error(err);
+        });
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <my-app><img class="app-loading-icon" src="img/loading.gif" sizes="(max-width: 40em) 100vw, 50vw" srcset="img/loading.gif 1x, img/loading@2x.gif 2x" alt="Loading" /></my-app>
-  </body>
+</body>
+
 </html>
